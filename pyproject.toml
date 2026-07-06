@@ -1,0 +1,11 @@
+[project]
+name = "python-advanced-course"
+version = "0.1.0"
+description = "Python 高级程序设计 —— 进阶特性与工程实践课程（代码库 + 练习数据集）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

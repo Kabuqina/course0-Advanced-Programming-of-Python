@@ -1,0 +1,16 @@
+date,region,product,units,price
+2026-01-05,north,widget,12,9.90
+2026-01-05,south,gadget,5,24.50
+2026-01-06,north,gadget,8,24.50
+2026-01-06,east,widget,20,9.90
+2026-01-07,west,gizmo,3,49.00
+2026-01-07,north,widget,7,9.90
+2026-01-08,south,gizmo,6,49.00
+2026-01-08,east,gadget,11,24.50
+2026-01-09,west,widget,9,9.90
+2026-01-09,north,gizmo,2,49.00
+2026-01-10,south,widget,14,9.90
+2026-01-10,east,gizmo,4,49.00
+2026-01-11,west,gadget,10,24.50
+2026-01-11,north,gadget,6,24.50
+2026-01-12,south,widget,18,9.90

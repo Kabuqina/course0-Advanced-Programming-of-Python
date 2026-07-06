@@ -1,0 +1,10 @@
+[
+  {"title": "Fluent Python", "author": "Ramalho", "year": 2022, "price": 59.9, "tags": ["python", "advanced"]},
+  {"title": "Effective Python", "author": "Slatkin", "year": 2019, "price": 39.9, "tags": ["python", "best-practices"]},
+  {"title": "Python Cookbook", "author": "Beazley", "year": 2013, "price": 49.5, "tags": ["python", "recipes"]},
+  {"title": "High Performance Python", "author": "Gorelick", "year": 2020, "price": 45.0, "tags": ["python", "performance"]},
+  {"title": "Architecture Patterns with Python", "author": "Percival", "year": 2020, "price": 52.0, "tags": ["python", "architecture"]},
+  {"title": "Robust Python", "author": "Viafore", "year": 2021, "price": 47.0, "tags": ["python", "typing"]},
+  {"title": "Using Asyncio in Python", "author": "Fowler", "year": 2022, "price": 33.0, "tags": ["python", "asyncio"]},
+  {"title": "Serious Python", "author": "Danjou", "year": 2018, "price": 34.9, "tags": ["python", "practices"]}
+]
