@@ -1,0 +1,23 @@
+mindmap
+  root((上下文管理器))
+    协议
+      __enter__
+      __exit__
+      返回值绑定 as
+      返回 True 吞异常
+    生成器写法
+      contextlib.contextmanager
+      yield 前 = enter
+      finally = exit
+    工程模式
+      计时 Timer
+      切换目录
+      原子写
+      抑制异常
+    工具
+      suppress
+      ExitStack
+    常见错误
+      误吞异常
+      清理不在 finally
+      残留 tmp

@@ -1,0 +1,31 @@
+lesson_id: 11
+slug: testing_pytest
+title: 测试、回归与可验证代码
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 函数与异常
+  - pytest 已安装
+keywords:
+  - pytest
+  - assert
+  - parametrize
+  - fixture
+  - tmp_path
+  - regression test
+learning_outcomes:
+  - 写清晰命名的测试函数并用 assert 断言
+  - 用 parametrize 覆盖多组输入
+  - 用 fixture 与 tmp_path 处理依赖与临时文件
+  - 用 pytest.raises 测试异常路径
+run_commands:
+  - python lessons/11_testing_pytest/examples.py
+  - pytest tests/test_11_testing_pytest.py
+datasets: []
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

@@ -1,0 +1,43 @@
+lesson_id: 16
+slug: capstone_project
+title: 综合项目（雏形）
+level: capstone
+estimated_time: 300min
+prerequisites:
+  - pathlib
+  - dataclass / 类型标注
+  - iterator / generator
+  - context manager
+  - logging
+  - pytest
+  - CLI
+keywords:
+  - capstone
+  - resource pack checker
+  - log analyzer
+  - async enricher
+learning_outcomes:
+  - 把多课机制组合成一个可运行、可测试、可讲解的工具
+  - 完成一个带 CLI 的小项目
+options:
+  - id: A
+    title: Course Resource Pack Checker
+    status: prototype_included
+  - id: B
+    title: Log Analyzer Toolkit
+    status: brief_only
+  - id: C
+    title: Mini Async Book Enricher
+    status: brief_only
+run_commands:
+  - python -m lessons.16_capstone_project.solutions --root lessons
+  - pytest tests/test_16_capstone_project.py
+datasets:
+  - data/access.log
+  - data/books.json
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise

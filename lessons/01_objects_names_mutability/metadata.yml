@@ -1,0 +1,33 @@
+lesson_id: 01
+slug: objects_names_mutability
+title: 对象、名字与可变性
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 变量与赋值
+  - list / dict 基础
+  - 函数定义
+keywords:
+  - object
+  - identity
+  - mutable
+  - immutable
+  - shallow copy
+  - deep copy
+  - LEGB
+learning_outcomes:
+  - 理解“变量是名字绑定到对象”而非盒子
+  - 区分 is 与 ==、id 与 value
+  - 解释并修复可变默认参数陷阱
+  - 用深拷贝避免共享可变状态污染
+run_commands:
+  - python lessons/01_objects_names_mutability/examples.py
+  - pytest tests/test_01_objects_names_mutability.py
+datasets: []
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

@@ -1,0 +1,29 @@
+lesson_id: 00
+slug: orientation
+title: 课程导入与仓库运行
+level: intro
+estimated_time: 45min
+prerequisites:
+  - Python 基础语法
+  - 命令行基本操作
+keywords:
+  - venv
+  - pip
+  - requirements
+  - pytest
+  - repo structure
+learning_outcomes:
+  - 明确课程定位：学“机制”与“工程化”，而非重复基础语法
+  - 跑通虚拟环境、依赖安装、示例运行与 pytest
+  - 理解仓库结构：lessons/、data/、tests/
+run_commands:
+  - python lessons/00_orientation/examples.py
+  - pytest tests/test_00_orientation.py
+datasets: []
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

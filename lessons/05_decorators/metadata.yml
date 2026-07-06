@@ -1,0 +1,33 @@
+lesson_id: 05
+slug: decorators
+title: 装饰器与横切关注点
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 函数是对象
+  - 闭包与 nonlocal
+  - "*args / **kwargs"
+keywords:
+  - decorator
+  - closure
+  - functools.wraps
+  - parametrized decorator
+  - caching
+  - retry
+learning_outcomes:
+  - 理解 decorator 本质 func = deco(func)
+  - 用 functools.wraps 保留元信息
+  - 写带参数的三层装饰器
+  - 用装饰器实现计时/缓存/重试/日志等横切关注点
+run_commands:
+  - python lessons/05_decorators/examples.py
+  - pytest tests/test_05_decorators.py
+datasets:
+  - data/access.log
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

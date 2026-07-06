@@ -1,0 +1,34 @@
+lesson_id: 03
+slug: iterators_generators
+title: 迭代器与生成器
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 函数
+  - for 循环
+  - 文件读取基础
+keywords:
+  - iterable
+  - iterator
+  - generator
+  - yield
+  - lazy evaluation
+  - pipeline
+learning_outcomes:
+  - 区分 iterable 与 iterator
+  - 能手写一个迭代器类
+  - 能用生成器处理大文件或流式数据
+  - 能组合多个生成器形成数据处理管道
+run_commands:
+  - python lessons/03_iterators_generators/examples.py
+  - pytest tests/test_03_iterators_generators.py
+datasets:
+  - data/numbers.txt
+  - data/sales.csv
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

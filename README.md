@@ -38,6 +38,26 @@ python-advanced-course/
 4. **并发与 asyncio** —— GIL、线程 vs 进程、事件循环、`async/await`、`gather`
 5. **元编程** —— 描述符、`__set_name__`、`property`、元类与 `__init_subclass__`
 
+## 课程结构升级（Phase 1）
+
+仓库正按 [`course_structure.md`](course_structure.md) 的 17 课蓝图逐步升级。**第一阶段**
+已落地 6 个核心课 + 1 个综合项目雏形，每课都是标准资源包
+（`metadata.yml` / `README.md` / `lecture.md` / `examples.py` / `exercises.py` /
+`solutions.py` / `kabuqina_cards.md` / `mindmap.mmd` + `tests/`）：
+
+| 新课 | 目录 | 说明 |
+|------|------|------|
+| 00 | `00_orientation` | 课程导入与仓库运行 |
+| 01 | `01_objects_names_mutability` | 对象、名字与可变性 |
+| 03 | `03_iterators_generators` | 迭代器与生成器（迁移自旧 `01_`） |
+| 05 | `05_decorators` | 装饰器与闭包（迁移自旧 `02_`） |
+| 06 | `06_context_managers` | 上下文管理器（迁移自旧 `03_`） |
+| 11 | `11_testing_pytest` | 测试与 pytest |
+| 16 | `16_capstone_project` | 综合项目雏形（资源包检查器） |
+
+> 迁移期间旧目录（`01_iterators_generators`、`02_decorators`、`03_context_managers`、
+> `04_concurrency_asyncio`、`05_metaprogramming`）暂**保留并存**，待新结构稳定后再合并。
+
 ## 快速开始
 
 ```bash

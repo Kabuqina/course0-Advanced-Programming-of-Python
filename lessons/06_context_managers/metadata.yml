@@ -1,0 +1,33 @@
+lesson_id: 06
+slug: context_managers
+title: 上下文管理器与资源安全
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - with 语句
+  - 异常基础
+  - 生成器
+keywords:
+  - with
+  - __enter__
+  - __exit__
+  - contextlib
+  - atomic write
+  - resource safety
+learning_outcomes:
+  - 用 with 保证资源被确定性释放
+  - 实现 __enter__ / __exit__ 协议
+  - 用 contextlib.contextmanager 以生成器简化写法
+  - 掌握计时/切目录/原子写/抑制异常等模式
+run_commands:
+  - python lessons/06_context_managers/examples.py
+  - pytest tests/test_06_context_managers.py
+datasets:
+  - data/numbers.txt
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors
