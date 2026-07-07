@@ -1,4 +1,6 @@
-# 模块 6 · 数据类与类型协议
+# Lesson 09 · 类型标注、数据类与协议
+
+> 迁移自旧 `06_dataclasses_typing`（对齐 `course_structure.md` 的 Lesson 09 编号）。
 
 ## 目标
 - 用 `@dataclass` 自动生成 `__init__` / `__repr__` / `__eq__`

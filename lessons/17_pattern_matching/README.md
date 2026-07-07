@@ -1,6 +1,8 @@
-# 模块 8 · 结构化模式匹配（match/case）
+# Lesson 17（选讲）· 结构化模式匹配（match/case）
 
 > 需要 Python 3.10+。
+> 迁移自旧 `08_pattern_matching`。模式匹配不在 `course_structure.md` 的 17 课主线中，
+> 作为**选讲/附加**内容保留于编号 17。
 
 ## 目标
 - 用 `match/case` 按**结构**解构数据，而非一串 `if/elif`
@@ -35,4 +37,4 @@ def describe_event(event: dict) -> str:
 2. `count_event_types`：统计 `data/events.json` 里各 `type` 出现次数
 3. `shape_area`：按 `kind` 匹配 circle / rect / square 求面积，未知形状抛 ValueError
 
-运行示例：`python lessons/08_pattern_matching/examples.py`
+运行示例：`python lessons/17_pattern_matching/examples.py`

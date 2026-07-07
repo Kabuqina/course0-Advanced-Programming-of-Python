@@ -1,4 +1,8 @@
-# 模块 7 · functools 与 itertools
+# Lesson 04 · itertools 与函数式管道（含 functools）
+
+> 迁移自旧 `07_functools_itertools`（对齐 `course_structure.md` 的 Lesson 04 编号）。
+> 本课以 itertools 惰性管道为主线，并介绍 functools 的 `lru_cache` / `reduce` /
+> `singledispatch` 等函数式工具。
 
 ## 目标
 - 用 `functools.lru_cache` 做记忆化，几行改写指数级递归
@@ -48,4 +52,4 @@ list(itertools.accumulate([1, 2, 3]))   # [1, 3, 6]
 3. `describe`：`singledispatch` 分派 int / str / list，其余走默认
 4. `chunked` / `running_total` / `group_consecutive`：itertools 惰性处理
 
-运行示例：`python lessons/07_functools_itertools/examples.py`
+运行示例：`python lessons/04_itertools_pipelines/examples.py`

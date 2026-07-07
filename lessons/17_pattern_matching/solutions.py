@@ -1,4 +1,4 @@
-"""模块 8 参考解答：结构化模式匹配（match/case，Python 3.10+）。"""
+"""Lesson 17（选讲）参考解答：结构化模式匹配（match/case，Python 3.10+）。"""
 
 from __future__ import annotations
 

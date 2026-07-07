@@ -1,4 +1,4 @@
-"""模块 6 参考解答：数据类与类型协议。"""
+"""Lesson 09 参考解答：类型标注、数据类与协议。"""
 
 import csv
 from dataclasses import dataclass

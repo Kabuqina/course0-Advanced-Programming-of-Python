@@ -2,7 +2,7 @@ import pytest
 
 from course_loader import DATA, load
 
-m = load("06_dataclasses_typing")
+m = load("09_type_hints_dataclasses")
 
 
 def test_money_add_and_str():

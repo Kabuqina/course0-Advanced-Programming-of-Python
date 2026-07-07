@@ -1,4 +1,4 @@
-"""模块 7 参考解答：functools 与 itertools。"""
+"""Lesson 04 参考解答：itertools 与函数式管道（含 functools）。"""
 
 from __future__ import annotations
 

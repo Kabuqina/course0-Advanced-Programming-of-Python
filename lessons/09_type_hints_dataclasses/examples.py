@@ -1,6 +1,6 @@
-"""模块 6 可运行示例：dataclass 的不可变性、比较、Protocol。
+"""Lesson 09 可运行示例：dataclass 的不可变性、比较、Protocol。
 
-直接运行：``python lessons/06_dataclasses_typing/examples.py``
+直接运行：``python lessons/09_type_hints_dataclasses/examples.py``
 """
 
 from __future__ import annotations

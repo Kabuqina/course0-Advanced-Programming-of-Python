@@ -1,4 +1,4 @@
-"""模块 6 练习：实现下列数据类与函数，使对应测试通过。
+"""Lesson 09 练习：实现下列数据类与函数，使对应测试通过。
 
 做完后对照 solutions.py。提示：善用 @dataclass 的 frozen / order 参数，
 以及 __post_init__ 做校验。

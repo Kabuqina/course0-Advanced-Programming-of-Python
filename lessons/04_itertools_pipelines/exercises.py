@@ -1,4 +1,4 @@
-"""模块 7 练习：实现下列函数，使对应测试通过。
+"""Lesson 04 练习：实现下列函数，使对应测试通过。
 
 做完后对照 solutions.py。提示：lru_cache、reduce、singledispatch、islice/accumulate/groupby。
 """

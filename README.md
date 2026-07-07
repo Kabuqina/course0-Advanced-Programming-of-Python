@@ -11,17 +11,20 @@
 
 ```
 python-advanced-course/
-├── data/                     配套练习数据集（CSV / JSON / 日志 / 文本）
-├── lessons/
-│   ├── 01_iterators_generators/
-│   ├── 02_decorators/
-│   ├── 03_context_managers/
-│   ├── 04_concurrency_asyncio/
-│   ├── 05_metaprogramming/
-│   ├── 06_dataclasses_typing/
-│   ├── 07_functools_itertools/
-│   └── 08_pattern_matching/
-└── tests/                    校验各模块参考解答的 pytest
+├── data/                          配套练习数据集（CSV / JSON / 日志 / 文本）
+├── lessons/                       课程按 course_structure.md 的编号组织
+│   ├── 00_orientation/
+│   ├── 01_objects_names_mutability/
+│   ├── 03_iterators_generators/
+│   ├── 04_itertools_pipelines/
+│   ├── 05_decorators/
+│   ├── 06_context_managers/
+│   ├── 09_type_hints_dataclasses/
+│   ├── 11_testing_pytest/
+│   ├── 16_capstone_project/
+│   ├── 17_pattern_matching/       （选讲/附加）
+│   └── （旧编号目录 01_iterators_generators 等迁移期暂并存，见下）
+└── tests/                         校验各课参考解答的 pytest
 ```
 
 每个模块目录包含：
@@ -33,36 +36,29 @@ python-advanced-course/
 | `exercises.py` | 练习骨架（`raise NotImplementedError`，动手实现） |
 | `solutions.py` | 参考解答（练习完再对照） |
 
-## 模块
+## 课程编号与现状
 
-1. **迭代器与生成器** —— 迭代协议、惰性求值、`yield from`、流式处理大文件
-2. **装饰器与闭包** —— 高阶函数、`functools.wraps`、带参装饰器、缓存与计时
-3. **上下文管理器** —— `with`、`__enter__/__exit__`、`contextlib`、确定性资源释放
-4. **并发与 asyncio** —— GIL、线程 vs 进程、事件循环、`async/await`、`gather`
-5. **元编程** —— 描述符、`__set_name__`、`property`、元类与 `__init_subclass__`
-6. **数据类与类型协议** —— `@dataclass`、`frozen/order`、`__post_init__` 校验、`typing.Protocol`
-7. **functools 与 itertools** —— `lru_cache`、`reduce`、`singledispatch`、惰性迭代组合
-8. **结构化模式匹配** —— `match/case`、映射/序列模式、捕获与守卫（Python 3.10+）
+仓库按 [`course_structure.md`](course_structure.md) 的 **17 课蓝图**统一编号。下表是**已落地**
+的课程（其余编号为规划中）。标准资源包包含
+`metadata.yml` / `README.md` / `examples.py` / `exercises.py` / `solutions.py` + `tests/`，
+Phase 1 的核心课还含 `lecture.md` / `kabuqina_cards.md` / `mindmap.mmd`。
 
-## 课程结构升级（Phase 1）
+| 课 | 目录 | 主题 | 来源 |
+|----|------|------|------|
+| 00 | `00_orientation` | 课程导入与仓库运行 | Phase 1 |
+| 01 | `01_objects_names_mutability` | 对象、名字与可变性 | Phase 1 |
+| 03 | `03_iterators_generators` | 迭代器与生成器 | Phase 1（迁移自旧 `01_`） |
+| 04 | `04_itertools_pipelines` | itertools 与函数式管道（含 functools） | 迁移自旧 `07_functools_itertools` |
+| 05 | `05_decorators` | 装饰器与闭包 | Phase 1（迁移自旧 `02_`） |
+| 06 | `06_context_managers` | 上下文管理器 | Phase 1（迁移自旧 `03_`） |
+| 09 | `09_type_hints_dataclasses` | 类型标注、数据类与协议 | 迁移自旧 `06_dataclasses_typing` |
+| 11 | `11_testing_pytest` | 测试与 pytest | Phase 1 |
+| 16 | `16_capstone_project` | 综合项目雏形（资源包检查器） | Phase 1 |
+| 17 | `17_pattern_matching` | 结构化模式匹配（选讲/附加，Python 3.10+） | 迁移自旧 `08_pattern_matching` |
 
-仓库正按 [`course_structure.md`](course_structure.md) 的 17 课蓝图逐步升级。**第一阶段**
-已落地 6 个核心课 + 1 个综合项目雏形，每课都是标准资源包
-（`metadata.yml` / `README.md` / `lecture.md` / `examples.py` / `exercises.py` /
-`solutions.py` / `kabuqina_cards.md` / `mindmap.mmd` + `tests/`）：
-
-| 新课 | 目录 | 说明 |
-|------|------|------|
-| 00 | `00_orientation` | 课程导入与仓库运行 |
-| 01 | `01_objects_names_mutability` | 对象、名字与可变性 |
-| 03 | `03_iterators_generators` | 迭代器与生成器（迁移自旧 `01_`） |
-| 05 | `05_decorators` | 装饰器与闭包（迁移自旧 `02_`） |
-| 06 | `06_context_managers` | 上下文管理器（迁移自旧 `03_`） |
-| 11 | `11_testing_pytest` | 测试与 pytest |
-| 16 | `16_capstone_project` | 综合项目雏形（资源包检查器） |
-
-> 迁移期间旧目录（`01_iterators_generators`、`02_decorators`、`03_context_managers`、
-> `04_concurrency_asyncio`、`05_metaprogramming`）暂**保留并存**，待新结构稳定后再合并。
+> **迁移期并存**：旧编号目录（`01_iterators_generators`、`02_decorators`、
+> `03_context_managers`、`04_concurrency_asyncio`、`05_metaprogramming`）暂保留，
+> 待新结构稳定后再合并/删除。模式匹配不在 17 课主线内，作为选讲挂在编号 17。
 
 ## 快速开始
 

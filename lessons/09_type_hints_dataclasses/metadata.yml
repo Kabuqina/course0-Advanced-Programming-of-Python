@@ -1,0 +1,33 @@
+lesson_id: 09
+slug: type_hints_dataclasses
+title: 类型标注、数据类与协议
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 类与对象
+  - 基本类型标注
+keywords:
+  - dataclass
+  - field
+  - frozen
+  - order
+  - __post_init__
+  - typing
+  - Protocol
+learning_outcomes:
+  - 用 @dataclass 自动生成样板方法
+  - 掌握 frozen / order / default_factory 与 __post_init__ 校验
+  - 用 typing.Protocol 表达结构化鸭子类型
+run_commands:
+  - python lessons/09_type_hints_dataclasses/examples.py
+  - pytest tests/test_09_type_hints_dataclasses.py
+datasets:
+  - data/employees.csv
+migrated_from: 06_dataclasses_typing
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

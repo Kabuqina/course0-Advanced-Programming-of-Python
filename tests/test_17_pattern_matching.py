@@ -8,7 +8,7 @@ pytestmark = pytest.mark.skipif(
     sys.version_info < (3, 10), reason="structural pattern matching needs Python 3.10+"
 )
 
-m = load("08_pattern_matching")
+m = load("17_pattern_matching")
 
 
 def test_describe_event_variants():

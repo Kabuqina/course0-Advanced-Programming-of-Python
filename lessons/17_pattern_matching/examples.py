@@ -1,6 +1,6 @@
-"""模块 8 可运行示例：match/case 的多种模式。
+"""Lesson 17（选讲）可运行示例：match/case 的多种模式。
 
-直接运行：``python lessons/08_pattern_matching/examples.py``
+直接运行：``python lessons/17_pattern_matching/examples.py``
 需要 Python 3.10+。
 """
 

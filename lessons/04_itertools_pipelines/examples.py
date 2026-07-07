@@ -1,6 +1,6 @@
-"""模块 7 可运行示例：lru_cache、partial、singledispatch、itertools 组合。
+"""Lesson 04 可运行示例：lru_cache、partial、singledispatch、itertools 组合。
 
-直接运行：``python lessons/07_functools_itertools/examples.py``
+直接运行：``python lessons/04_itertools_pipelines/examples.py``
 """
 
 from __future__ import annotations

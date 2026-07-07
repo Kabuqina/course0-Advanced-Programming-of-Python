@@ -1,0 +1,33 @@
+lesson_id: 04
+slug: itertools_pipelines
+title: itertools 与函数式管道
+level: intermediate
+estimated_time: 90min
+prerequisites:
+  - 迭代器与生成器
+  - 函数是对象
+keywords:
+  - itertools
+  - islice
+  - accumulate
+  - groupby
+  - functools
+  - lru_cache
+  - singledispatch
+  - compose
+learning_outcomes:
+  - 用 itertools 惰性组合数据处理管道
+  - 用 lru_cache 记忆化、reduce 聚合、singledispatch 分派
+  - 理解纯函数与函数式组合 compose
+run_commands:
+  - python lessons/04_itertools_pipelines/examples.py
+  - pytest tests/test_04_itertools_pipelines.py
+datasets: []
+migrated_from: 07_functools_itertools
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

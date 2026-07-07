@@ -1,0 +1,33 @@
+lesson_id: 17
+slug: pattern_matching
+title: 结构化模式匹配（选讲）
+level: intermediate
+elective: true
+estimated_time: 60min
+prerequisites:
+  - dict / 序列基础
+  - Python 3.10+
+keywords:
+  - match
+  - case
+  - structural pattern matching
+  - mapping pattern
+  - capture
+learning_outcomes:
+  - 用 match/case 按结构解构数据
+  - 掌握映射模式、捕获变量与通配 _
+  - 理解匹配即解构与分支顺序敏感
+run_commands:
+  - python lessons/17_pattern_matching/examples.py
+  - pytest tests/test_17_pattern_matching.py
+datasets:
+  - data/events.json
+migrated_from: 08_pattern_matching
+note: 不在 course_structure.md 的 17 课主线中，作为选讲/附加内容保留于编号 17。
+kabuqina_use:
+  readable_by_assistant: true
+  explainable_units:
+    - concept
+    - code_demo
+    - exercise
+    - common_errors

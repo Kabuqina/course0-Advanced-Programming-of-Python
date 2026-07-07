@@ -2,7 +2,7 @@ import pytest
 
 from course_loader import load
 
-m = load("07_functools_itertools")
+m = load("04_itertools_pipelines")
 
 
 def test_fib_sequence():
