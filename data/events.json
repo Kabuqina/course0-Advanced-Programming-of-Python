@@ -1,0 +1,8 @@
+[
+  {"type": "click", "x": 10, "y": 20},
+  {"type": "key", "key": "Enter"},
+  {"type": "scroll", "dy": -3},
+  {"type": "click", "x": 5, "y": 5},
+  {"type": "resize", "width": 800, "height": 600},
+  {"type": "key", "key": "Escape"}
+]
