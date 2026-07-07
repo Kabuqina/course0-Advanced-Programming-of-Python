@@ -17,7 +17,10 @@ python-advanced-course/
 │   ├── 02_decorators/
 │   ├── 03_context_managers/
 │   ├── 04_concurrency_asyncio/
-│   └── 05_metaprogramming/
+│   ├── 05_metaprogramming/
+│   ├── 06_dataclasses_typing/
+│   ├── 07_functools_itertools/
+│   └── 08_pattern_matching/
 └── tests/                    校验各模块参考解答的 pytest
 ```
 
@@ -37,6 +40,9 @@ python-advanced-course/
 3. **上下文管理器** —— `with`、`__enter__/__exit__`、`contextlib`、确定性资源释放
 4. **并发与 asyncio** —— GIL、线程 vs 进程、事件循环、`async/await`、`gather`
 5. **元编程** —— 描述符、`__set_name__`、`property`、元类与 `__init_subclass__`
+6. **数据类与类型协议** —— `@dataclass`、`frozen/order`、`__post_init__` 校验、`typing.Protocol`
+7. **functools 与 itertools** —— `lru_cache`、`reduce`、`singledispatch`、惰性迭代组合
+8. **结构化模式匹配** —— `match/case`、映射/序列模式、捕获与守卫（Python 3.10+）
 
 ## 课程结构升级（Phase 1）
 
